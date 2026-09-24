@@ -1,0 +1,89 @@
+{
+  "name": "Booking",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "string"
+    },
+    "showId": {
+      "type": "string"
+    },
+    "movieId": {
+      "type": "string"
+    },
+    "theatreId": {
+      "type": "string"
+    },
+    "seats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ticketPrice": {
+      "type": "number"
+    },
+    "convenienceFee": {
+      "type": "number"
+    },
+    "taxes": {
+      "type": "number"
+    },
+    "discount": {
+      "type": "number"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "paymentStatus": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "PAID",
+        "FAILED",
+        "REFUNDED"
+      ],
+      "default": "PENDING"
+    },
+    "bookingStatus": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "CONFIRMED",
+        "CANCELLED"
+      ],
+      "default": "PENDING"
+    },
+    "bookingReference": {
+      "type": "string"
+    },
+    "couponCode": {
+      "type": "string"
+    },
+    "movieTitle": {
+      "type": "string"
+    },
+    "theatreName": {
+      "type": "string"
+    },
+    "screenName": {
+      "type": "string"
+    },
+    "showDate": {
+      "type": "string"
+    },
+    "showTime": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "userId",
+    "showId",
+    "bookingReference",
+    "bookingStatus",
+    "paymentStatus"
+  ]
+}

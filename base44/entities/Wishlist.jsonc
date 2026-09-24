@@ -1,0 +1,16 @@
+{
+  "name": "Wishlist",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "string"
+    },
+    "movieId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "userId",
+    "movieId"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Show",
+  "type": "object",
+  "properties": {
+    "movieId": {
+      "type": "string"
+    },
+    "theatreId": {
+      "type": "string"
+    },
+    "screenName": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "startTime": {
+      "type": "string"
+    },
+    "endTime": {
+      "type": "string"
+    },
+    "ticketPrice": {
+      "type": "number"
+    },
+    "rows": {
+      "type": "number"
+    },
+    "cols": {
+      "type": "number"
+    },
+    "premiumRows": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "city": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "movieId",
+    "theatreId",
+    "date",
+    "startTime",
+    "ticketPrice"
+  ]
+}

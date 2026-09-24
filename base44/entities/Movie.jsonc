@@ -1,0 +1,69 @@
+{
+  "name": "Movie",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "poster": {
+      "type": "string"
+    },
+    "backdrop": {
+      "type": "string"
+    },
+    "trailerUrl": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "language": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "number"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "certificate": {
+      "type": "string"
+    },
+    "releaseDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "cast": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "director": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "NOW_SHOWING",
+        "COMING_SOON",
+        "ENDED"
+      ],
+      "default": "NOW_SHOWING"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "title",
+    "status"
+  ]
+}

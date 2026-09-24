@@ -1,0 +1,34 @@
+{
+  "name": "Theatre",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "facilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "screenCount": {
+      "type": "number"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "image": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "city"
+  ]
+}

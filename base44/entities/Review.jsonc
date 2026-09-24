@@ -1,0 +1,29 @@
+{
+  "name": "Review",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "string"
+    },
+    "movieId": {
+      "type": "string"
+    },
+    "bookingId": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "review": {
+      "type": "string"
+    },
+    "userName": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "userId",
+    "movieId",
+    "rating"
+  ]
+}

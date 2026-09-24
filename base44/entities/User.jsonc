@@ -1,0 +1,12 @@
+{
+  "name": "User",
+  "type": "object",
+  "properties": {
+    "phone": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Coupon",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "discountType": {
+      "type": "string",
+      "enum": [
+        "PERCENT",
+        "FLAT"
+      ]
+    },
+    "discountValue": {
+      "type": "number"
+    },
+    "maxDiscount": {
+      "type": "number"
+    },
+    "minAmount": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "code",
+    "discountType",
+    "discountValue"
+  ]
+}

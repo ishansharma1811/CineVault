@@ -1,0 +1,51 @@
+{
+  "name": "Seat",
+  "type": "object",
+  "properties": {
+    "showId": {
+      "type": "string"
+    },
+    "seatId": {
+      "type": "string"
+    },
+    "row": {
+      "type": "string"
+    },
+    "number": {
+      "type": "number"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "STANDARD",
+        "PREMIUM",
+        "COUPLE"
+      ],
+      "default": "STANDARD"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "AVAILABLE",
+        "HELD",
+        "BOOKED"
+      ],
+      "default": "AVAILABLE"
+    },
+    "heldBy": {
+      "type": "string"
+    },
+    "bookedBy": {
+      "type": "string"
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "showId",
+    "seatId",
+    "status"
+  ]
+}
