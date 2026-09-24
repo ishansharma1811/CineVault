@@ -1,4 +1,4 @@
-
+import base44 from 'base44'; // or the appropriate package name
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
